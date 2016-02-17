@@ -11,9 +11,6 @@ module.exports = function (app) {
 
 function timeStamp(date) {
 
-   // is it empty? - return instructions   - THIS ISN'T WORKING - EMPTY DATA GETS A 'CANNOT GET' ERROR
-   if (!date) return('Instructions');
-   
    // is it some date form that JS can read?
    var d = new Date(date);
    if (d.getFullYear()) return (JSONDates(d));
